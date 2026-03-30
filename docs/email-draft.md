@@ -1,8 +1,8 @@
-**Subject:** Home Assignment — SDK QA
+**Subject:** Home Assignment — SDK Integration
 
 Hi [Name],
 
-Thank you for your interest in the QA Automation Intern position at Tapp!
+Thank you for your interest in the AI Engineer & Software Developer Intern position at Tapp!
 
 As part of the interview process, we'd like you to complete a short home assignment. The goal is for us to understand how you approach problems — there are no trick questions, and we don't expect perfection.
 

@@ -1,7 +1,7 @@
 {
   "name": "my-sdk",
   "version": "1.0.0",
-  "description": "A simple utility SDK for the QA assignment",
+  "description": "A simple utility SDK for the assignment",
   "main": "index.js",
   "license": "MIT"
 }

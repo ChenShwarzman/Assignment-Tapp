@@ -1,4 +1,4 @@
-# SDK QA Assignment
+# SDK Assignment
 
 Welcome! In this assignment, you will work with a small SDK (a code library) and a demo app that uses it. Your job is to find problems, fix them, and verify that the documentation matches reality.
 
