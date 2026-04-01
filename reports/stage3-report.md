@@ -1,6 +1,4 @@
 **Part A:**
-// added the test part here too
-
 
 | # | Function (from docs) | Exists in code? | Name matches? | Parameters match? | Return value matches docs? | Notes | 
 |---|---|---|---|---|---|---|
