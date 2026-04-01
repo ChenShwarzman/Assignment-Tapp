@@ -32,7 +32,15 @@ Final Report: SDK Validation & Bug Analysis
         * The missing documentation for uniqueValues will not crash the app, although it is unfortunate that we might be asked to implement something that already exists.
 
 3. If you were the team lead, which 3 issues would you fix first? Why?
-    * Fix SDK Connection (Dependency Error): This is the immediate blocker. Without the correct import path in app.js, the application cannot start. Fixing this is the first step in my opinion.
-    * Resolve Missing Functions and Naming Mismatches: I would prioritize implementing the missing subtract and formatDate functions and renaming "sayHello" to "greet" to match the documentation. These issues currently cause runtime errors (TypeErrors).
+    The critical issues are the ones that can crash the app or break expected SDK usage:
+
+    * Wrong SDK import path in the app (./my-sdk instead of my-sdk)
+    This is critical because the app cannot load the SDK and fails immediately with a module resolution error.
+
+    * Missing documented function: greet(name)
+    This is critical because the app/documentation calls greet, but the SDK exports sayHello instead. Calling greet throws a runtime TypeError.
+
+    * Missing documented function: formatDate(date)
+    This is critical because consumers following the docs will call a function that does not exist, causing runtime error.
 
 4. This assignment taught me that documentation is very importent. it should be acurete cause even a small naming mismatch or a missing function can cause a total system crash. I realized that high-quality code is useless without accurate docs, as inconsistencies lead to developer frustration and "silent" data bugs. Ultimately, I learned that automated validation is essential to ensure the code always honors the promises made in the docs. I belive it is importent to maintain the doc in the same level of code.

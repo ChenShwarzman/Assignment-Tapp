@@ -45,7 +45,7 @@
 
         After: const formattedDate = (new Date()).toLocaleDateString();
 
-    d. Change to the object method. Date is a built-in class in Javascript that has built-in format method.
+    d. Since the SDK does not provide formatDate(), I replaced the call with JavaScript’s built-in Date formatting via toLocaleDateString(), which returns a readable date string without relying on a missing SDK function.
 
 
 The complete run:

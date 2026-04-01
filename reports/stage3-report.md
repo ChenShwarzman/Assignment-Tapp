@@ -24,6 +24,6 @@
 |---|---|---|---|---|---|
 | 1 | `greet(name)` | `node -e "const sdk = require('my-sdk'); console.log(sdk.greet('Alice'))"`   | `TypeError: sdk.greet is not a function` | `"Hello, Alice!"`|The function does not exist (there is `sayHello` function instead)|
 | 2 | `subtract(a, b)` | `node -e "const sdk = require('my-sdk'); console.log(sdk.subtract(10, 4))"`   | `TypeError: sdk.subtract is not a function` | `6`|The function does not exist|
-| 3 | `getTimestamp()` | `node -e "const sdk = require('my-sdk'); console.log(sdk.getTimestamp())"`   | `1775040277059` | `2026-01-04 1:47:00"`|The function does not format the date as expected|
+| 3 | `getTimestamp()` | `node -e "const sdk = require('my-sdk'); console.log(sdk.getTimestamp())"`   | `1775040277059` | `2024-01-15 10:30:00`|The function does not format the date as expected|
 | 4 | `calculateAverage(numbers)` | `node -e "const sdk = require('my-sdk'); console.log(sdk.calculateAverage([1,2]))"`   | `1` | `1.5`|The function rounds the avg value so it is not match the expected value|
 | 5 | `formatDate(date)` | `node -e "const sdk = require('my-sdk'); console.log(sdk.formatDate(new Date()))"`   | `TypeError: sdk.formatDate is not a function` | `"January 15, 2024"`|The function does not exist|
