@@ -1,4 +1,4 @@
-1. SDK error:
+1. **SDK error:**
 
     a. The error message: 
     
@@ -14,7 +14,7 @@
 
     d. As said, this is the name of the package in the dependencies (we don't need to use the path).
 
-2. Greet error:
+2. **Greet error:**
 
     a. The error message: 
     
@@ -31,7 +31,7 @@
     d. Calls the right function instead which exists in the SDK.
 
 
-3. formatDate error:
+3. **FormatDate error:**
 
     a.The error message: 
     
