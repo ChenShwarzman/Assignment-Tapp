@@ -1,7 +1,7 @@
 // Demo App - Uses my-sdk to perform various operations
 
 // BUG #1: Wrong import path (should be "my-sdk", not "./my-sdk")
-const sdk = require("./my-sdk");
+const sdk = require("my-sdk");
 
 // Step 1: Initialize the SDK
 console.log("=== Step 1: Initializing SDK ===");
@@ -11,7 +11,7 @@ console.log("Init result:", result);
 // Step 2: Greet the user
 // BUG #2: Calling "greet" but the function is actually called "sayHello"
 console.log("\n=== Step 2: Greeting ===");
-const greeting = sdk.greet("Alice");
+const greeting = sdk.sayHello("Alice");
 console.log(greeting);
 
 // Step 3: Do some math
@@ -59,7 +59,7 @@ console.log("Unique values:", unique);
 // Step 10: Format a date
 // BUG #3: Calling a function that doesn't exist in the SDK
 console.log("\n=== Step 10: Format Date ===");
-const formattedDate = sdk.formatDate(new Date());
+const formattedDate = (new Date()).toLocaleDateString();
 console.log("Formatted date:", formattedDate);
 
 console.log("\n=== All operations completed! ===");
