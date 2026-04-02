@@ -1,7 +1,8 @@
 Final Report:
 
 1. Total Issues Found:
-    There is 8 issues that founded overall, The issues:
+
+   There is 8 issues that founded overall. The issues:
 
     * Dependency Error: 
         * The app tried to call the SDK using a relative path (./my-sdk) instead of the registered package name (my-sdk), causing an immediate crash.
@@ -20,7 +21,7 @@ Final Report:
         * "sayHello" - This function exists in the code but is documented as greet, creating a naming mismatch
         * "uniqueValues" - That is missing in the documtation.
 
-2. 
+3. 
     * Which issues are critical?
         * The dependency error and the missing functions/ wrong name function name are the crictical issues. These issues are classified as critical in my opinion because they cause the application to crash immediately.
         * for the dependency error if the app can not find the module it won't even start.
@@ -31,7 +32,7 @@ Final Report:
         * The avg round - It is an edge case if it not for rocket science it sould be minor :) 
         * The missing documentation for uniqueValues will not crash the app, although it is unfortunate that we might be asked to implement something that already exists.
 
-3. If you were the team lead, which 3 issues would you fix first? Why?
+4. If you were the team lead, which 3 issues would you fix first? Why?
     The critical issues are the ones that can crash the app or break expected SDK usage:
 
     * Wrong SDK import path in the app (./my-sdk instead of my-sdk)
@@ -43,4 +44,4 @@ Final Report:
     * Missing documented function: formatDate(date)
     This is critical because consumers following the docs will call a function that does not exist, causing runtime error.
 
-4. This assignment taught me that documentation is very importent. it should be acurete cause even a small naming mismatch or a missing function can cause a total system crash. I realized that high-quality code is useless without accurate docs, as inconsistencies lead to developer frustration and "silent" data bugs. Ultimately, I learned that automated validation is essential to ensure the code always honors the promises made in the docs. I belive it is importent to maintain the doc in the same level of code.
+5. This assignment taught me that documentation is very importent. it should be acurete cause even a small naming mismatch or a missing function can cause a total system crash. I realized that high-quality code is useless without accurate docs, as inconsistencies lead to developer frustration and "silent" data bugs. Ultimately, I learned that automated validation is essential to ensure the code always honors the promises made in the docs. I belive it is importent to maintain the doc in the same level of code.
