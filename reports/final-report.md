@@ -1,4 +1,4 @@
-Final Report: SDK Validation & Bug Analysis
+Final Report:
 
 1. Total Issues Found:
     There is 8 issues that founded overall, The issues:
