@@ -34,15 +34,16 @@ Final Report:
         * The missing documentation for uniqueValues will not crash the app, although it is unfortunate that we might be asked to implement something that already exists.
 
 4. If you were the team lead, which 3 issues would you fix first? Why?
-    The critical issues are the ones that can crash the app or break expected SDK usage:
+
+   The critical issues are the ones that can crash the app or break expected SDK usage:
 
     * Wrong SDK import path in the app (./my-sdk instead of my-sdk)
     This is critical because the app cannot load the SDK and fails immediately with a module resolution error.
 
     * Missing documented function: greet(name)
-    This is critical because the app/documentation calls greet, but the SDK exports sayHello instead. Calling greet throws a runtime TypeError.
+    This is critical because in the documentation greet appers and consumers following the docs will call a function that does not exist, but the SDK support sayHello instead so it is even a quick fix.
 
     * Missing documented function: formatDate(date)
     This is critical because consumers following the docs will call a function that does not exist, causing runtime error.
 
-5. This assignment taught me that documentation is very importent. it should be acurete cause even a small naming mismatch or a missing function can cause a total system crash. I realized that high-quality code is useless without accurate docs, as inconsistencies lead to developer frustration and "silent" data bugs. Ultimately, I learned that automated validation is essential to ensure the code always honors the promises made in the docs. I belive it is importent to maintain the doc in the same level of code.
+6. This assignment taught me that documentation is very importent. it should be acurete cause even a small naming mismatch or a missing function can cause a total system crash. I realized that high-quality code is useless without accurate docs, as inconsistencies lead to developer frustration and "silent" data bugs. Ultimately, I learned that automated validation is essential to ensure the code always honors the promises made in the docs. I belive it is importent to maintain the doc in the same level of code.
