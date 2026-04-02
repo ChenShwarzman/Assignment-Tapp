@@ -11,6 +11,7 @@ Final Report:
         * "greet"
         * "formatDate"
         * "subtract"
+        
         all these functions are missing in the SDK but documented.
 
     * Functional Bugs:
